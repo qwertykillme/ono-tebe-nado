@@ -1,1 +1,213 @@
-/* место для вашего кода */
+.padding {
+    padding: 0 50px;
+}
+
+.header {
+    padding-top: 92px;
+    padding-bottom: 105px;
+    height: 107px;
+    
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "nav logo contacts";
+    grid-template-columns: 1fr 148px 1fr;
+}
+
+.header_left {
+    position: relative;
+    left: 2px;
+    grid-area: nav;
+    display: flex;
+    line-height: normal;
+}
+
+.header_list {
+    list-style-type:circle;
+    display: flex;
+    gap: 32px;
+}
+
+.list_border {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+
+}
+
+li:first-child {
+    list-style: none
+  }
+
+li::marker{
+    font-size:19px;
+ 
+}
+
+
+.header_center {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_black {
+    position: relative;
+    right: 19px;
+    margin-left: 4px;
+    width: 148px;
+    height: 105px;
+    flex-shrink: 0;
+}
+
+.header_right {
+    position: relative;
+    right: 32px;
+    grid-area: contacts;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 24.3px;
+}
+
+.contacts {
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+.header_font{
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.content {
+    position: relative;
+    margin: 96px 0 180px 0px;
+    width: 1440px;
+    height: 755.939px;
+    flex-shrink: 0;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    background-color:rgba(0 0 0 / 0.6);
+    z-index: 0;
+  
+}
+
+.title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "ono . ."
+    ". tebe ."
+    ". . nado"; 
+
+    position: absolute;
+    top: 165px;
+    left: 50px;
+    right: 50px;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%; /* 115px */
+    letter-spacing: 30px;
+    text-transform: uppercase;
+
+}
+
+.ono {
+    grid-area: ono;
+    align-self: center;
+    justify-self:flex-start;
+}
+.tebe {
+    position: relative;
+    bottom: 8px;
+    left: 16px;
+    grid-area: tebe;
+    align-self: center;
+    justify-self: center;
+}
+
+.nado {
+    position: relative;
+    bottom: 22px;
+    left: 35px;
+    grid-area: nado;
+    display: flex;
+
+}
+
+.letter {
+    letter-spacing: 60px;
+}
+
+.word {
+    display: flex;
+}
+
+
+.ad {
+    letter-spacing: 32px;
+}
+
+.section_footer {
+    display: flex;
+
+    
+}
+
+.description {
+    position: relative;
+    top: 667px;
+    left: 422px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+    word-spacing: 17px;
+}
+
+.button_bet {
+    
+    position: relative;
+    top: 654px;
+    left: 505px;
+    padding: 15px 23px;
+    width: 257px;
+    height: 52px;
+    flex-shrink: 0;
+    color: #FFF;
+    background-color: transparent;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
