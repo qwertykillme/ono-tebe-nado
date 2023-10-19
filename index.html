@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/banner.css" />
     <link rel="stylesheet" href="./styles/lots.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
   </head>
   <body>
     <header>
       <div class="header">
-        <div class="header_list">
+        <nav class="header_list">
           <ul class="list">
             <li>
               <a class="list_items" href="#banner">главная</a>
@@ -24,116 +24,110 @@
             <li><a class="list_items" href="#lots">посмотреть лоты</a></li>
             <li><a class="list_items" href="#about">об аукционе</a></li>
           </ul>
-        </div>
-
+        </nav>
         <div class="header_logo">
           <a><img src="./images/logo-black.svg" alt="логотип" class="logo_black"/></a>
         </div>
-
         <address class="header_contacts">
           <div class="contacts">
             <a class="contact_link" href="tel:+99995555555">+9 999 555 5555</a>
-            <br />
+            <br>
             <a class="contact_link" href="mailto:info@sobaka.ge"
-              >info@sobaka.ge</a
-            >
-            <br />
-            <p>наб. Принсенграхт 263-265,</p>
-            <p>Амстердам</p>
+              >info@sobaka.ge</a>
+            <br>
+            <p>наб. Принсенграхт 263-265, <br>
+            Амстердам</p>
           </div>
         </address>
       </div>
     </header>
-
     <main>
       <section>
         <div class="banner" id="banner">
-          <div class="banner_title">
-            <div class="ono">о <span class="letter"> но </span></div>
-            <div class="tebe">те <span class="letter"> бе </span></div>
-            <div class="nado">
-              <span class="letter">н</span>
-              <span class="ad">ад</span>
-              <div class="o">о</div>
-            </div>
-          </div>
+            <h1 class="title_words">
+              <span class="word_normal">о<span class="letter">но</span></span>
+              <span class="word_normal text_center">те<span class="letter">бе</span></span>
+              <span class="word_normal text_right"><span class="letter">н</span>ад<span class="no_spacing">о</span></span>
+            </h1>
           <div class="banner_footer">
             <div class="banner_description">
-              Аукцион вещей, в которые
+              <span class="description">Аукцион вещей, в которые </span>
               <span class="description_spacing">никто не верил</span>
             </div>
-            <div class="button">
-              <button class="button_bet">сделать ставку</button>
-            </div>
+           
+              <button class="button_bet" type="button">сделать ставку</button>
           </div>
         </div>
       </section>
-
       <section>
         <div class="lots" id="lots">
-          <div class="lots_title">Лоты</div>
+          <h1 class="lots_title">Лоты</h1>
           <div class="lots_grid">
-            <div class="lot">
-              <img
+            <a class="lot" href="#">
+              <article>
+                <img
                 src="./images/card-lot-01.jpg"
                 alt="девушка снимает своего друга на камеру"
                 class="lot_img"
               />
               <div class="lot_content">
-                <div class="lot_name">
+                <h1 class="lot_name">
                   Фильм режиссёра, который бросил киношколу
-                </div>
-                <div class="lot_description">
+                </h1>
+                <p class="lot_description">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-                </div>
+                </p>
               </div>
-            </div>
-            <div class="lot">
-              <img
+              </article>  
+            </a>
+            <a class="lot" href="#">
+              <article>
+                <img
                 src="./images/card-lot-02.jpg"
                 alt="роскошная дверная ручка"
                 class="lot_img"
               />
               <div class="lot_content">
-                <div class="lot_name">
+                <h1 class="lot_name">
                   Книга, где описан один скучный день из жизни рекламного агента
-                </div>
-                <div class="lot_description">
+                </h1>
+                <p class="lot_description">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                   переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
                   начиная с античных времён. И это всё накладывается на эпическую
                   поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                   Джойса?
-                </div>
-              </div>
-            </div>
-            <div class="lot">
-              <img
+                </p>
+              </article>
+            </a>
+            <a class="lot" href="#">
+              <article>
+                <img
                 src="./images/card-lot-03.jpg"
                 alt="яркая цветная картинка"
                 class="lot_img"
               />
               <div class="lot_content">
-                <div class="lot_name">
+                <h1 class="lot_name">
                   Картина, которую повторит даже 5-летний сын маминой подруги
-                </div>
-                <div class="lot_description">
+                </h1>
+                <p class="lot_description">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков… Сколько бы вы на такое поставили, если бы не знали, что
                   это — одна из революционных работ Кандинского?
-                </div>
+                </p>
               </div>
-            </div>
+              </article>
+            </a>
           </div>
           <div class="lots_more">
-            <a> посмотреть больше </a>
+            <a href="#"> посмотреть больше </a>
           </div>
         </div>
       </section>
-
       <section>
         <div class="about" id="about">
           <div class="logo_container">
@@ -147,7 +141,7 @@
             </a>
             </div>
           </div>
-          <div class="about_title">об аукционе</div>
+          <h1 class="about_title">об аукционе</h1>
           <div class="about_content">
             <div class="about_content_block">
               <p class="about_content_description">
@@ -171,7 +165,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="footer_left">
         <div class="footer_contacts">
@@ -186,25 +179,21 @@
             <p>Амстердам</p>
           </address>
         </div>
-
-        <div class="footer_center">
+        <nav class="footer_center">
           <ul class="footer_list">
             <li><a class="list_items first_item" href="#banner">главная</a></li>
             <li><a class="list_items" href="#lots">посмотреть лоты</a></li>
             <li><a class="list_items" href="#about">об аукционе</a></li>
           </ul>
-        </div>
-
+        </nav>
         <div class="footer_right">
-          <a>
+          <a href="#">
             <img src="./images/yt.svg" alt="иконка ютуба" class="icon" />
           </a>
-
-          <a>
+          <a href="#">
             <img src="./images/vk.svg" alt="икогка вконтакте" class="icon" />
           </a>
-
-          <a>
+          <a href="#">
             <img
               src="./images/pinterest.svg"
               alt="иконда пинтереста"
