@@ -2,7 +2,6 @@
   padding: 0 50px 0 50px;
   margin-bottom: 180px;
 }
-
 .lots_title {
   margin-left: 40px;
   color: #000;
@@ -21,34 +20,45 @@
 .lot {
   position: relative;
   width: 430px;
-  min-height: 450px;
+  height: 450px;
   text-decoration: none;
 }
-
-
-
-.lot::before {
+.lot::after {
   content: " ";
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
+.lot_first {
+ background-image: url(../images/card-lot-01.jpg);
+ background-size: cover;
+}
 
+.lot_second {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+}
+
+.lot_third {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+
+}
 
 .lot_content {
+  color: #fff;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100%;
-  color: #fff;
-  padding: 50px 40px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+
 }
 
 .lot_name {
