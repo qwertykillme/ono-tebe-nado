@@ -20,7 +20,7 @@
 .lot {
   position: relative;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   text-decoration: none;
 }
 .lot::after {
